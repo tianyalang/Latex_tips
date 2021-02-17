@@ -31,6 +31,9 @@
 :cry:
 :sheep:
 :horse:
+:rocket:
+:chestnut:
+[一份完整表情列表的链接](https://gist.github.com/rxaviers/7360908)
 
 ### svg代码
 
@@ -89,6 +92,20 @@
 ### 换行
 
 换行</br>标记
+
+### 空格
+
+只能识别**一个**空格。
+
++ dd ddd   ddd
++ 我是 中国  人民的   儿子。
+
+用命令插入空格
+
++ 一个&nbsp;半角空格
++ 两个&ensp;半角空格
++ 四个&emsp;半角空格
++ 细&thinsp;空格
 
 ### 多行注释
 
