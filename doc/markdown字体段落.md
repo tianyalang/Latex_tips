@@ -27,12 +27,8 @@
 
 ### emoji 表情
 
-:tea:
-:cry:
-:sheep:
-:horse:
-:rocket:
-:chestnut:
+:tea: :cry: :sheep: :horse: :rocket:
+:chestnut: :bug: :scissors: :memo: :recycle:
 [一份完整表情列表的链接](https://gist.github.com/rxaviers/7360908)
 
 ### svg代码
