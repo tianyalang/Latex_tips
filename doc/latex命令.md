@@ -68,8 +68,11 @@ $\judge[5]{a}{c}$ % 注意：[]中内容替换默认参数
 ```
 
 编译后显示：
+
 &emsp;$\sqrt{10^2-4ac}$
+
 &emsp;$\sqrt{b^2-4ac}$
+
 &emsp;$\sqrt{5^2-4ac}$
 
 ## input / include
