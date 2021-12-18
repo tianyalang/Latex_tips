@@ -10,21 +10,30 @@
 \newcommand{新命令}[参数数量][默认值]{定义内容}
 ```
 
-+ 参数数量：可选，用于指定该命令具有参数个数，默认为0，即无参数。新定义命令参数不得含有抄录命令\verb 和抄录环境verbatim以及相关命令和环境。
-+ 默认值：可选，用于设定第一个参数的默认值，如果定义时给出默认值，表面命令第一个参数可选，新命令最多只能有一个可选参数，而且必须是第一个参数。
-+ 命令内容：涉及某个参数时用符号#n表示，如#1  #2
++ 参数数量：**可选**
+  - 用于指定该命令具有参数个数，默认为0，即无参数，最多8个
+  - 新定义命令参数不得含有抄录命令\verb 和抄录环境verbatim以及相关命令和环境
++ 默认值：**可选**
+  - 用于设定第一个参数的默认值，如果定义时给出默认值，表明命令第一个参数可选，
+  - 新命令最多只能有一个可选参数，而且必须是第一个参数
++ 命令内容：**必选**
+  - 涉及某个参数时用符号`#N`表示，如#1 #2
 
 :chestnut:&nbsp;&nbsp;**E.g.**
 
 ```latex
-\newcommand{\mytextcolor}[1]{\textcolor{black}{{}#1}}
+\newcommand{\Ns}{N_{\mathrm s}}                   % 不带参数
+\newcommand{\mytextcolor}[1]{\textcolor{red}{#1}} % 带一个参数
+\newcommand{\lifang}[3]{(#1 + #2 + #3)^3}         % 带多个参数
+\newcommand{\fenshu}[3][100]{\frac{#2 + #3}{#1}}  % 带默认参数
+
+$\Ns$
+\mytextcolor{我是红色}
+$\lifang{x}{y}{z}$
+$\fenshu{55}{23}$, $\fenshu[94]{46}{37}$
 ```
 
-+ 第一个花括号：新命令的名字
-+ \[1]:表示有一个参数
-+ 后面的大花括号表示新命令的内容。\textcolor{black}{{}#1}:#1指出参数的位置
-
-使用：`\mytextcolor{text}` 的效果和`\textcolor{black}{text}`相同。这个命令就可以用于快捷地定义颜色的种类。在修改论文时十分有用。
+![](https://hezudao-picturebed.oss-cn-beijing.aliyuncs.com/img/20211218123939.png)
 
 ## input / include
 
