@@ -11,7 +11,7 @@
 ```
 
 + 参数数量：**可选**
-  - 用于指定该命令具有参数个数，默认为0，即无参数，最多8个
+  - 用于指定该命令具有的参数个数，默认为0，最多8个
   - 新定义命令参数不得含有抄录命令\verb 和抄录环境verbatim以及相关命令和环境
 + 默认值：**可选**
   - 用于设定第一个参数的默认值，如果定义时给出默认值，表明命令第一个参数可选，
@@ -22,18 +22,22 @@
 :chestnut:&nbsp;&nbsp;**E.g.**
 
 ```latex
-\newcommand{\Ns}{N_{\mathrm s}}                   % 不带参数
-\newcommand{\mytextcolor}[1]{\textcolor{red}{#1}} % 带一个参数
-\newcommand{\lifang}[3]{(#1 + #2 + #3)^3}         % 带多个参数
-\newcommand{\fenshu}[3][100]{\frac{#2 + #3}{#1}}  % 带默认参数
+\newcommand{\diff}{\mathrm d}                       % 不带参数
+\newcommand{\mytextcolor}[1]{\textcolor{red}{#1}}   % 带一个参数
+\newcommand{\cubic}[3]{#1^3 + #2^3 + #3^3}          % 带多个参数
+\newcommand{\judge}[3][10]{\sqrt{#1^2-4#2#3}}       % 带默认参数
 
-$\Ns$
-\mytextcolor{我是红色}
-$\lifang{x}{y}{z}$
-$\fenshu{55}{23}$, $\fenshu[94]{46}{37}$
+$\diff x$
+\mytextcolor{It is red}  % 依赖 'color' 包
+$\cubic{x}{y}{z}$
+$\judge{a}{c}$, $\judge[b]{a}{c}$, $\judge[5]{a}{c}$
 ```
 
-![](https://hezudao-picturebed.oss-cn-beijing.aliyuncs.com/img/20211218123939.png)
+编译后效果
+&emsp;$\mathrm d x$
+&emsp;<font face='Times New Roman' color=red>It is red</font>
+&emsp;$x^3+y^3+z^3$
+&emsp;$\sqrt{10^2-4ac},\sqrt{b^2-4ac},\sqrt{5^2-4ac}$
 
 ## input / include
 
