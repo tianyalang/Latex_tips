@@ -1,6 +1,6 @@
-# Latex_tips
+# LaTex_tips
 
-Latex 语法小汇总
+LaTex 语法小汇总
 
 [插图](doc/插图.md)
 
