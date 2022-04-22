@@ -1,7 +1,5 @@
 # Latex 命令
 
-[介绍各种宏包文档的网站](https://www.ctan.org/)
-
 [toc]
 
 ## 命令作用范围
