@@ -9,7 +9,6 @@
 - 一个环境是一个分组。最大的分组就是正文 `document` 环境
 - 成对括号 `{}` 可产生一个分组
 
-## [自定义命令](./自定义命令.md)
 
 ## input / include
 
@@ -26,36 +25,6 @@
 
 include 每次可以把该部分文件编译后的辅助文件保留，从而includeonly里的内容变化时，可以加快整个文件的编译速度
 
-## 换行，空格
-
-```latex
-\par   换行
-\quad  空格
-\qquad 两个空格
-\hspace{2em} 空两个中文字符
-```
-
-## 段落
-
-```latex
-\setlength{\parskip}{1ex} % 段间距
-```
-
-## 无序列表行间距过大
-
-```latex
-\begin{itemize}
-    \setlength{\itemsep}{0pt}
-    \setlength{\parsep}{0pt}
-    \item 233
-    \item 666
-\end{itemize}
-或者
-\begin{itemize}[parsep=0pt, itemsep=0pt]
-    \item 233
-    \item 666
-\end{itemize}
-```
 
 ## 有用的宏包
 
