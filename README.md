@@ -48,3 +48,5 @@
 [宏包文档](https://www.ctan.org/)
 
 [CTeX 中文套装](http://www.ctex.org/CTeX)
+
+[PGF/Tikz 资源汇总](https://www.hahack.com/tools/pgftikz-resources/)
