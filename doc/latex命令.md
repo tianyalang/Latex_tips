@@ -9,7 +9,6 @@
 - 一个环境是一个分组。最大的分组就是正文 `document` 环境
 - 成对括号 `{}` 可产生一个分组
 
-
 ## input / include
 
 + 换页方式
@@ -25,6 +24,19 @@
 
 include 每次可以把该部分文件编译后的辅助文件保留，从而includeonly里的内容变化时，可以加快整个文件的编译速度
 
+## 条件编译
+
+按照编译条件，选择编译内容。
+所用宏包：`iftex`
+
+```latex
+\usepackage{iftex}
+\ifXeTeX % =\ifxetex, \ifpdftex=\ifPDFTeX
+    \setmainfont{Times New Roman}
+\else
+    dkdkd
+\fi
+```
 
 ## 有用的宏包
 
